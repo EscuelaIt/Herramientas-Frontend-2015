@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Jade</title>
+    <meta name="description" content="Jade es un “template engine” (motor de plantillas) de alto performance, enfocado en permitir escribir código HTML de forma rápida. Podríamos decir que se trata de un pre-procesador de código html; similar a stylus, sass o less con respecto a CSS. Jade es fuertemente influenciado por HAML e implementado para Javascript con Node. Jade usa la Indentación(sangrado) para definir la jerarquía de nuestro documento html, no tendremos que escribir tags html &lt; /&gt;, estos serán generados por jade al momento de compilar nuestro código jade.">
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <!-- comentario html-->
+    <section id="jade" class="container i-b f1">
+      <h1><a href="http://jade-lang.com/" target="_blank">Jade</a></h1>
+      <!--intepolacion-->
+      <p>Esto es texto pero aquí necesito un <a href="http://jade-lang.com/" target="_blank">Jade</a></p>
+      <p>
+        Si te gusta la forma en que Jade genera código HTML
+        puedes leer la documentación del
+        <a href="http://jade-lang.com/api" target="_blank">API</a>,
+        la referencia del
+        <a href="http://jade-lang.com/reference" target="_blank">Lenguaje</a>
+        y de la
+        <a href="http://jade-lang.com/command-line" target="_blank">Línea de Comandos</a>.
+        
+      </p>
+      <button id="presioname" class="boton">Presióname</button>
+      <script>
+        //alert('JavaScript ejecutado desde Jade')
+        document.querySelector('#presioname').onclick = () => {
+        	alert('He presionado el botón desde Jade con JavaScript')
+        }
+        
+      </script>
+      <p>Hola Jade</p>
+      <p>La hora 15 es Posterior del Meridiano (PM)</p>
+      <h2>Estaciones del Año</h2>
+      <ol>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+      </ol>
+      <article class="container">
+        <h2>Estaciones del Año en México</h2>
+              <div class="item">
+                <h3>Primavera</h3>
+                <ul>
+                  <li>Abril</li>
+                  <li>Mayo</li>
+                  <li>Junio</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Verano</h3>
+                <ul>
+                  <li>Julio</li>
+                  <li>Agosto</li>
+                  <li>Septiembre</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Otoño</h3>
+                <ul>
+                  <li>Octubre</li>
+                  <li>Noviembre</li>
+                  <li>Diciembre</li>
+                </ul>
+              </div>
+              <div class="item">
+                <h3>Invierno</h3>
+                <ul>
+                  <li>Enero</li>
+                  <li>Febrero</li>
+                  <li>Marzo</li>
+                </ul>
+              </div>
+      </article><img src="http://jade-lang.com/style/jade-logo-header.svg">
+    </section>
+  </body>
+</html>

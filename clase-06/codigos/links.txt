@@ -1,0 +1,5 @@
+https://gist.github.com/nucliweb/3a108802d2bb397485d2
+https://github.com/jonmircha/iconos29/blob/master/planeacion.md
+http://support.ghost.org/markdown-guide/
+http://bextlan.com/slides/nodejs/#/
+https://docs.npmjs.com/
