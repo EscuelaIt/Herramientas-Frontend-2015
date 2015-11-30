@@ -1,0 +1,19 @@
+{
+  "name": "autoprefixer",
+  "version": "1.0.0",
+  "description": "Ejemplo de Autoprefixer",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "postcss --use autoprefixer *.css -d build/"
+  },
+  "keywords": [
+    "autoprefixer",
+    "postcss"
+  ],
+  "author": "@nucliweb",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "postcss-cli": "^2.3.2"
+  }
+}
