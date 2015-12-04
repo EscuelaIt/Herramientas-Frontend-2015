@@ -1,6 +1,6 @@
 # WPO: Web Performance Optimization
 
-* [Presentación](./blob/master/clase-10/Clase_WPO-Curso_Herramientas_front-end_JavierMrt.pdf)
+* [Presentación](Clase_WPO-Curso_Herramientas_front-end_JavierMrt.pdf)
 * [Web Page Test](http://www.webpagetest.org/)
 * [PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 * [Documentación PageSpeed](https://developers.google.com/speed/docs/insights/about)
