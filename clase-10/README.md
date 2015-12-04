@@ -5,8 +5,12 @@
 * [PageSpeed](https://developers.google.com/speed/pagespeed/insights/)
 * [Documentación PageSpeed](https://developers.google.com/speed/docs/insights/about)
 * [Evaluating network performance](https://developer.chrome.com/devtools/docs/network)
-* [Rabbit for Google PageSpeed web test](https://itunes.apple.com/sa/app/rabbit-for-google-pagespeed/id968336453?mt=8)
-* [Perf.Rocks](http://perf.rocks/)
+* [Rabbit for Google PageSpeed web test](https://itunes.apple.com/sa/app/rabbit-for-google-pagespeed/id968336453?mt=8) La aplicación iOS de Javier.
+* [Perf.Rocks](http://perf.rocks/) Es un proyecto de un compañero, y en el cual estoy colaborando_(1)_.
+
+_(1) Recordad que hacer Pull Request a proyectos Open Source nos hace mejores personas, y si un proyecto os gusta es muy gratificante recibir ★ ;)_
+
+---
 
 #### .htaccess
 Este es el contenido del fichero .htaccess que nos mostró Javier en su sesión. El nombre de la archivo debe ser `.htaccess`, desde el explorador de Windows no os va ha dejar definir ese nombre, ya que considera que estamos poniendo una extensión sin nombre de archivo. Lo podéis crear directamente desde la mayoría de editores.
