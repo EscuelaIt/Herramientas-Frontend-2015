@@ -1,4 +1,4 @@
-# WPO: Web Performance Optimization
+## WPO: Web Performance Optimization
 
 * [Presentación](Clase_WPO-Curso_Herramientas_front-end_JavierMrt.pdf)
 * [Web Page Test](http://www.webpagetest.org/)

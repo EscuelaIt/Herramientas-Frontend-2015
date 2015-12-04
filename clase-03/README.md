@@ -1,4 +1,4 @@
-### Buenas prácticas Javascript
+## Buenas prácticas Javascript
 
 * [Presentación](http://slides.com/joanleon/buenas-practicas-javascript#/)
 

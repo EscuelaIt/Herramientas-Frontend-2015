@@ -1,4 +1,4 @@
-# Buenas prácticas CSS
+## Buenas prácticas CSS
 
 ## Temario
 1. [Introducción](http://nahuelsotelo.github.io/edu.css-architecture/#/3)
