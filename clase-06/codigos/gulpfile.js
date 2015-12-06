@@ -16,9 +16,8 @@ gulp.task('jade', () => {
         locals: locals
     }))
     .pipe(gulp.dest('./'))
-});
+})
 
-gulp.task("watch", function () {
+gulp.task('watch', function () {
 	gulp.watch(["./*.*"],["jade"]);
-});
-
+})
