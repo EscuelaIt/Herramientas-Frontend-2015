@@ -1,0 +1,32 @@
+{
+  "name": "advance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify -t babelify -x isomorphic-fetch -x bluebird src/index.js -d -o dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.3.15",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "exorcist": "^0.4.0",
+    "live-server": "^0.8.2",
+    "uglify-js": "^2.6.1",
+    "undefaultify": "^1.0.0",
+    "watchify": "^3.6.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "bluebird": "^3.0.6",
+    "isomorphic-fetch": "^2.2.0"
+  }
+}

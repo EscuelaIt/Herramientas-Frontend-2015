@@ -1,0 +1,19 @@
+Compilar y Map:
+  ./node_modules/.bin/browserify -t babelify src/index.js -d | ./node_modules/.bin/exorcist dist/bundle.js.map > dist/bundle.js
+
+Watchify:
+  ./node_modules/.bin/watchify -t babelify src/index.js -d -o dist/bundle.js
+
+UMD Client:
+  ./node_modules/.bin/browserify -t babelify src/PokeClient.js -d --standalone PokeClient |
+  ./node_modules/.bin/exorcist dist/Pokeclient.js.map > dist/PokeClient.umd.js
+
+Split Vendors / App
+
+  ./node_modules/.bin/browserify -r isomorphic-fetch -r bluebird -d |
+  ./node_modules/.bin/exorcist dist/vendors.js.map > dist/vendors.js 
+
+  ./node_modules/.bin/browserify -t babelify -x isomorphic-fetch -x bluebird src/index.js -d |
+  ./node_modules/.bin/exorcist dist/app.js.map > dist/app.js
+
+  ./node_modules/.bin/watchify -t babelify -x isomorphic-fetch -x bluebird src/index.js -d -o dist/app.js
