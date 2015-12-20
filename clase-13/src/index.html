@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<title>Análisis e Implementación de Componente jQuery</title>
+	<meta name="description" content="En este ejercicio aprenderemos a analizar componentes jQuery de terceros y poderlos implementar en nuestros proyectos. Los componentes a analizar son Fancybox 2 y Flexslider 2." />
+	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" />
+	<link rel="stylesheet" href="css/flexslider.css" />
+	<style>
+		a { text-decoration: none; }
+		body, html { font-family: Helvetica, sans-serif; font-size: 16px; }
+	</style>
+</head>
+<body>
+	<h1>Análisis e Implementación de Componentes de Terceros</h1>
+	<hr />
+	<h2>Hola chic@s de Escuela IT :)</h2>
+	<h2>Implementación de Fancybox 2</h2>
+	<h3>Galeria sencilla con fancybox</h3>
+	<a class="galeria-sencilla" rel="galeria1" href="img/normal/img1.jpg" title="Imagen 1">
+		<img src="img/thumbs/img1.jpg" />
+	</a>
+	<a class="galeria-sencilla" rel="galeria1" href="img/normal/img2.jpg" title="Imagen 2">
+		<img src="img/thumbs/img2.jpg" />
+	</a>
+	<a class="galeria-sencilla" rel="galeria1" href="img/normal/img3.jpg" title="Imagen 3">
+		<img src="img/thumbs/img3.jpg" />
+	</a>
+	<a class="galeria-sencilla" rel="galeria2" href="img/normal/img4.jpg" title="Imagen 4">
+		<img src="img/thumbs/img4.jpg" />
+	</a>
+	<a class="galeria-sencilla" rel="galeria2" href="img/normal/img5.jpg" title="Imagen 5">
+		<img src="img/thumbs/img5.jpg" />
+	</a>
+	<a class="galeria-sencilla" rel="galeria2" href="img/normal/img6.jpg" title="Imagen 6">
+		<img src="img/thumbs/img6.jpg" />
+	</a>
+	<h3>Diferentes efectos con fancybox</h3>
+	<a id="efecto1" href="img/normal/img7.jpg" title="Imagen 7">
+		<img src="img/thumbs/img7.jpg" />
+	</a>
+	<a id="efecto2" href="img/normal/img8.jpg" title="Imagen 8">
+		<img src="img/thumbs/img8.jpg" />
+	</a>
+	<a id="efecto3" href="img/normal/img9.jpg" title="Imagen 9">
+		<img src="img/thumbs/img9.jpg" />
+	</a>
+	<a id="efecto4" href="img/normal/img10.jpg" title="Imagen 10">
+		<img src="img/thumbs/img10.jpg" />
+	</a>
+	<a id="efecto5" href="img/normal/img11.jpg" title="Imagen 11">
+		<img src="img/thumbs/img11.jpg" />
+	</a>
+	<h3>Otros contenidos</h3>
+	<ul>
+		<li><a class="otros-contenidos" href="#no-existe" title="Error de carga">Error de carga</a></li>
+		<li><a class="otros-contenidos" href="#oculto" title="Contenido Oculto">Contenido oculto en el html</a></li>
+		<li><a class="otros-contenidos fancybox.ajax" href="ajax.txt" title="Contenido por AJAX">Contenido cargado por AJAX</a></li>
+		<li><a class="otros-contenidos" data-fancybox-type="iframe" href="http://bextlan.com" title="Contenido en iframe">Contenido cargado en iframe</a></li>
+		<li><a class="otros-contenidos" href="swf/AnimationVSAnimator.swf" title="Animación SWF">Animación SWF</a></li>
+	</ul>
+	<div id="oculto" style="display:none;">
+		<p>Este contenido esta oculto en el html (tiene un display:none) y se ejecuta con fancybox</p>
+		<img src="img/normal/img12.jpg" />
+	</div>
+	<h3>Contenidos de redes sociales</h3>
+	<ul>
+		<li><a class="social-media" rel="galeria-social" href="http://www.youtube.com/watch?v=mVEbmLEX0Ro" title="Youtube">Youtube</a></li>
+		<li><a class="social-media" rel="galeria-social" href="http://instagram.com/p/bAIi8PDOmj/" title="Instagram">Instagram</a></li>
+		<li><a class="social-media" rel="galeria-social" href="http://vimeo.com/19469447" title="Vimeo">Vimeo</a></li>
+		<li><a rel="galeria-social" class="social-media" href="http://maps.google.com/maps?q=Eiffel+Tower,+Avenue+Gustave+Eiffel,+Paris,+France&t=h&z=17">Google Maps</a></li>
+	</ul>
+	<hr />
+	<h2>Implementación de FlexSlider 2</h2>
+	<div class="flexslider" style="margin:auto; width:90%;">
+		<ul class="slides">
+			<li><img src="img/normal/img13.jpg" /></li>
+			<li><img src="img/normal/img14.jpg" /></li>
+			<li><img src="img/normal/img15.jpg" /></li>
+			<li><img src="img/normal/img16.jpg" /></li>
+		</ul>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script src="js/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/codigos.js"></script>
+</body>
+</html>
