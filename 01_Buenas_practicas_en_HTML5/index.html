@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Buenas Prácticas de HTML5 por @jonmircha</title>
+	<meta name="description" content="Esta presentación contiene toda la teoría de la clase Buenas Prácticas de HTML5 del Curso de Herramientas Frontend de Escuela IT">
+	<meta name="author" content="Jonathan MirCha">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="shortcut icon" type="image/png" href="http://bextlan.com/v4/themes/v4/img/bextlan.png">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/jon.css">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="corner c-tl"><img src="img/escuela-it.png" alt="Escuela IT" style="max-width: 90%;"></div>
+	<div class="corner c-tr"><img src="img/frontend-tools.jpg" alt="Herramientas Frontend" style="max-height: 80px;"></div>
+	<div class="corner c-bl"><p>Curso de Herramientas Front end</p></div>
+	<div class="corner c-br"><p>Jonathan MirCha - @jonmircha</p></div>
+	<div class="reveal">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<h1>Buenas Prácticas de <span style="display:none">HTML5</span></h1>
+				<div><img src="img/logo-html5.png" alt="HTML5" style="border:0; box-shadow:none; max-width:256px"></div>
+				<p>por <a href="http://twitter.com/jonmircha" target="_blank">@jonmircha</a></p>
+			</section>
+			<section>
+				<figure>
+					<figcaption>
+						<a href="http://jonmircha.com" target="_blank">Jonathan MirCha</a><br>
+						<b>Instructor Web & Arquitecto de Front end</b><br>
+						Fundador de <a href="http://bextlan.com" target="_blank">Bextlán</a>
+					</figcaption>
+					<img src="http://bextlan.com/img/jonmircha.jpg" style="height: auto; max-width: 400px;"></a>
+				</figure>
+			</section>
+			<section>
+				<h2>Temas:</h2>
+				<ol>
+					<li><a href="#/">Inicio</a></li>
+					<li><a href="#/3">Un poco de historia</a></li>
+					<li><a href="#/16">HTML5 la base del Diseño Web Actual</a></li>
+					<li><a href="#/23">El papel del Front end Contemporáneo</a></li>
+					<li>
+						Buenas Prácticas de Front end:
+						<ul>
+							<li><a href="#/32">HTML: Estructura, Contenido y Semántica</a></li>
+							<li><a href="#/46">CSS: Presentación</a></li>
+							<li><a href="#/59">JS: Programación</a></li>
+						</ul>
+					</li>
+					<li><a href="#/67">Be water...</a></li>
+				</ol>
+			</section>
+			<section>
+				<h2>Un poco de historia</h2>
+			</section>
+			<section>
+				<div>
+					<h2>Un poco de historia</h2>
+					<p class="dos-columnas">En 1440 GUTENBERG inventa la imprenta moderna</p>
+					<p class="dos-columnas">En 1991 BERNERS-LEE propone el lenguaje HTML</p>
+					<p class="dos-columnas">Medios Impresos llevan 600 años</p>
+					<p class="dos-columnas">Medios Digitales llevan 25 años</p>
+					<p class="dos-columnas">El lienzo es el papel</p>
+					<p class="dos-columnas">El lienzo es la pantalla</p>
+					<p class="dos-columnas">Colores CMYK</p>
+					<p class="dos-columnas">Colores RGB</p>
+					<p class="dos-columnas">Dimensiones milímetros</p>
+					<p class="dos-columnas">Dimensiones pixeles</p>
+				</div>
+			</section>
+			<section>
+				<div>
+					<article class="dos-columnas">
+						<img src="http://bextlan.com/img/para-cursos/papel.jpg" style="max-height: 200px">
+					</article>
+					<article class="dos-columnas">
+						<img src="http://bextlan.com/img/para-cursos/primera-decision.png" style="max-height: 200px">	
+					</article>
+					<p class="dos-columnas">Dimensiones cerradas en las que definir y estructurar el contenido</p>
+					<p class="dos-columnas">Dimensiones abiertas en las que definir y estructurar el contenido</p>
+				</div>
+			</section>
+			<section>
+				<h2>Frontend<br><br>Front end<br><br>Front-end<br><br>	</h2>
+				<a href="https://es.wikipedia.org/wiki/Front-end_y_back-end" target="_blank">definición</a>
+			</section>
+			<section>
+				<h2>Partiendo de...</h2>
+				<img src="img/browsers.png">
+			</section>
+			<section>
+				<h2>Teníamos...</h2>
+				<img src="img/html-css-js.jpg">
+			</section>
+			<section>
+				<h2>Y también...</h2>
+				<img src="img/ps-fl.jpg">
+			</section>
+			<section>
+				<h2>Pero... en 2007</h2>
+				<img src="http://bextlan.com/img/para-cursos/steve-iphone.png">
+			</section>
+			<section>
+				<h2>Y entonces...</h2>
+				<img src="http://bextlan.com/img/para-cursos/1024x768.png">
+			</section>
+			<section>
+				<img src="http://bextlan.com/img/para-cursos/not-the-web.png">
+			</section>
+			<section>
+				<img src="http://bextlan.com/img/para-cursos/this-is-the-web.png">
+			</section>
+			<section>
+				<img src="http://bextlan.com/img/para-cursos/will-be-the-web.png">
+			</section>
+			<section>
+				<h2><a href="http://flashvhtml.com/" target="_blank">FLASH VS HTML5</a></h2>
+				<img src="img/html5-vs-flash.jpg">
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>La base del Diseño Web Actual</h2>
+				<img src="img/logo-html5.png" style="border:0; box-shadow:none; max-width:256px">
+			</section>
+			<section>
+				<h2>SÉ UN HÉROE</h2>
+				<img src="img/web-hero.jpg">
+			</section>
+			<section>
+				<h2>HTML5</h2>
+				<p>Define los actuales estándares de diseño y desarrollo web, tanto para equipos de escritorio, como para dispositivos móviles.</p>
+			</section>
+			<section>
+				<img src="img/formula-html5.png">
+			</section>
+			<section>
+				<h2>HTML5</h2>
+				<p>
+					Es la sinergia de 3 tecnologías que se complementan en el diseño y desarrollo Frontend:
+				</p>
+				<p>
+					HTML (estructura y contenido)
+				</p>
+				<p>
+					CSS (diseño y presentación) y
+				</p>
+				<p>
+					JS (interactividad y funcionalidad)
+				</p>
+			</section>
+			<section>
+				<h2>Implementaciones HTML5</h2>
+	            <article class="cuatro-columnas">
+	            	<div class="fragment">
+                        <p>Semantics</p>
+                        <img class="redonda" src="img/semantica.png">
+                    </div>
+                    <div class="fragment">
+                        <p>Multimedia</p>
+                        <img class="redonda" src="img/multimedia.png">
+                    </div>
+	            </article>
+	            <article class="cuatro-columnas">
+	            	<div class="fragment">
+                        <p><small>Offline & Local Storage</small></p>
+                        <img class="redonda" src="img/offline-storage.png">
+                    </div>
+                    <div class="fragment">
+                        <p><small>3D, Graphics & Effects</small></p>
+                        <img class="redonda" src="img/3d-effects.png">
+                    </div>
+	            </article>
+	            <article class="cuatro-columnas">
+	            	<div class="fragment">
+                        <p><small>Device Access</small></p>
+                        <img class="redonda" src="img/device-access.png">
+                    </div>
+                    <div class="fragment">
+                        <p><small>Performance & Integration</small></p>
+                        <img class="redonda" src="img/performance.png">
+                    </div>
+	            </article>
+	            <article class="cuatro-columnas">
+	            	<div class="fragment">
+                        <p>Connectivity</p>
+                        <img class="redonda" src="img/connectivity.png">
+                    </div>
+                    <div class="fragment">
+                        <p>CSS3</p>
+                        <img class="redonda" src="img/css3.png">
+                    </div>
+	            </article>
+			</section>
+			<section>
+				<h2>Más sobre HTML5</h2>
+				<ul>
+					<li><a href="http://www.w3.org/html/logo/" target="_blank">Sitio Oficial</a> HTML5</li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">Mozilla Developer Network</a></li>
+					<li><a href="http://www.html5rocks.com/en/" target="_blank">HTML5 Rocks</a></li>
+					<li><a href="http://www.w3.org/TR/html51/" target="_blank">¿Lo que sigue?</a></li>
+					<li><a href="https://www.youtube.com/watch?v=tkCDt4p4l_w" target="_blank">Video Tutorial</a> sobre Implementaciones HTML5</li>
+					<li><a href="http://bextlan.com/slides/html5-apis/" target="_blank">Enlaces y Teoría</a> sobre Implementaciones HTML5</li>
+					<li><a href="http://mdo.github.io/code-guide/" target="_blank">Guía de Código HTML y CSS</a> puedes ver su <a href="http://adrianayala.mx/code-guide/es/" target="_blank">traducción</a></li>
+					<li><a href="http://browserdiet.com/es/" target="_blank">Guía de Rendimiento Frontend</a></li>
+					<li><a href="http://escuela.it/cursos/html5/" target="_blank">Curso de HTML5</li>
+					<li><a href="http://escuela.it/cursos/javascript-avanzado-apis-html5/" target="_blank">Curso de API's HTML5</li>
+				</ul>
+                <p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>Front end Contemporáneo</h2>
+				<p><a href="https://medium.com/creative-business/why-is-it-so-hard-to-find-a-front-end-developer-cb92848a7c6f" target="_blank">¿Por qué es tan difícil encontrar un buen Front end?</a></p>
+				<img src="img/frontend-is-coming.jpg">
+			</section>
+			<section>
+				<h2>Ahora nos preocupamos de...</h2>
+				<img src="img/html-css-js-rwd.png">
+			</section>
+			<section>
+				<h2>Nuevos Conceptos</h2>
+				<img src="img/front-end-developer-tools.jpg">
+			</section>
+			<section>
+				<h2>Nuevas Herramientas</h2>
+				<img src="img/front-end-developer-tools2.jpg" style="max-height:500px;">
+			</section>
+			<section>
+				<h2>Más Herramientas</h2>
+				<img src="img/front-end-developer-tools3.jpg">
+			</section>
+			<section>
+				<img src="img/more.jpg">
+			</section>
+			<section>
+				<h2>Máááááááááás Herramientas</h2>
+				<img src="img/front-end-developer-tools4.jpg" style="max-height:500px;">
+			</section>
+			<section>
+				<img src="img/no-more.jpg">
+			</section>
+			<section>
+				<h2>Entendiendo el Front end</h2>
+				<img src="img/understand-front-end.jpg">
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>HTML</h2>
+				<h3>Estructura y Contenido</h3>
+			</section>
+			<section>
+				<h2>ESTRUCTURA Y CONTENIDO</h2>
+				<ul>
+					<li>Lenguaje de marcado basado en etiquetas y atributos, nos define estructura y contenido</li>
+					<li>El contenido es el Rey</li>
+					<li>Planear bien nuestra estructura de HTML (uso de etiquetas)</li>
+					<li>Trabajar la semántica</li>
+					<li>La semántica de nuestras etiquetas la define el contenido y su distribución</li>
+					<li>Los motores de búsqueda son ciegos, si tu contenido esta bien estructurado, tu contenido será bien posicionado</li>
+				</ul>
+			</section>
+			<section>
+				<h2>HTML</h2>
+				<h3>Semántica</h3>
+			</section>
+			<section>
+				<h2>DECLARACIÓN</h2>
+				<p>HTML Y PUNTO</p>
+				<code>&lt;!DOCTYPE html&gt;</code>
+			</section>
+			<section>
+				<h2>ETIQUETAS</h2>
+				<p>Semánticas y estructurales</p>
+				<p>La semántica de las etiquetas no define su posición en el layout</p>
+				<p>ARTICLE, ASIDE, FIGURE, FIGCAPTION, FOOTER, HEADER,  HGROUP, NAV, SECTION, TIME, AUDIO, VIDEO, CANVAS, MAIN, PICTURE...</p>
+			</section>
+			<section>
+				<ul>
+					<li>SECTION: Contenido genérico estructurado</li>
+					<li>ARTICLE: Contenido estructural distribuible de manera independiente</li>
+					<li>ASIDE: Contenido secundario relacionado al elemento</li>
+					<li>NAV: Sección relativa a enlaces dentro del documento o página</li>
+					<li>HEADER: Contenido introductorio suele tener elementos de navegación y encabezados (H1...H6)</li>
+					<li>FOOTER: Sección que contiene información acerca del documento o página</li>
+					<li>MAIN: Contenido principal</li>
+				</ul>
+			</section>
+			<section>
+				<ul>
+					<li>FIGURE: Sección de contenido visual, múltiples medios</li>
+					<li>FIGCAPTION: Leyenda o pié relativo al contenido visual de figure, uno figcaption por cada figure, puede contener semántica</li>
+					<li>VIDEO & AUDIO</li>
+					<li>CANVAS & SVG</li>
+					<li>y muchas <a href="http://madebymike.com.au/html5-periodic-table/" target="_blank">más</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>ATRIBUTOS</h2>
+				<p>Más específicos (Funcionales con la UX)</p>
+				<p>FORMULARIOS: EMAIL, TEL, NUMBER, URL, SEARCH, COLOR, DATE, RANGE, AUTOFOCUS, REQUIRED, MAX, MIN, PLACEHOLDER...</p>
+			</section>
+			<section>
+				<h2>BUENAS PRÁCTICAS DE CÓDIGO HTML</h2>
+			</section>
+			<section>
+				<h2>Especificar:</h2>
+				<ul>
+					<li>Tipo de documento HTML5</li>
+					<li>Atributo de idioma</li>
+					<li>Modo de compatibilidad IE</li>
+					<li>Juego de caractéres</li>
+					<li>Area de Visualización</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Definir:</h2>
+				<ul>
+					<li>Título único máx 65 caractéres</li>
+					<li>Descripción única máx 156 caractéres</li>
+					<li>Estilos antes de &lt;/head&gt;</li>
+					<li>Scripts antes de &lt;/body&gt;</li>
+				</ul>
+			</section>
+			<section>
+				<h2>NO:</h2>
+				<ul>
+					<li>Cerrar etiquetas únicas <b>&lt;img src=" "&gt;</b> <br>en vez de <b>&lt;img src=" "/&gt;</b></li>
+					<li>Definir atributos booleanos <b>&lt;input disabled&gt;</b><br>en vez de <b>&lt;input disabled="disabled" /&gt;</b></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Definir atributos en el siguiente orden:</h2>
+				<ul>
+					<li>class (si se tiene más de una clase separar con 2 espacios)</li>
+					<li>id, name</li>
+					<li>data-*</li>
+					<li>src, for, type, href, value</li>
+					<li>title, alt</li>
+					<li>aria-*, role</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Ejemplo:</h2>
+				<p>
+					<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Título de mi documento, este deberá ser único max 65 caracteres&lt;/title&gt;
+	&lt;meta name="description" content="Breve descripción de lo que los usuarios encontrarán en este documento, deberá ser única max 156 caracteres"&gt;
+	&lt;link rel="stylesheet" href="estilos.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Estructura de Documento HTML5&lt;/h1&gt;
+	&lt;!-- CONTENIDO HTML --&gt;
+	&lt;script src="codigos.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				</p>
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>CSS</h2>
+				<h3>Presentación</h3>
+			</section>
+			<section>
+				<h2>CSS	</h2>
+				<ul>
+					<li>Lenguaje de reglas basado en una sintaxis atributo:valor</li>
+					<li>Provee presentación (diseño) a las estructuras HTML</li>
+				</ul>
+			</section>
+			<section>
+				<h2>TIPOS DE SELECTORES</h2>
+				<ul>
+					<li>
+						<p>Etiquetas <small><code>p { ... }</code></small></p>
+						
+					</li>
+					<li>
+						<p>Id's <small><code>#menu { ... }</code></small></p>
+					</li>
+					<li>
+						<p>Clases <small><code>.item { ... }</code></small></p>
+					</li>
+					<li>
+						<p>Universal <small><code>* { ... }</code></small></p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>TIPOS DE SELECTORES</h2>
+				<ul>
+					<li>
+						<p>Descendiente (espacio en blanco) <small><code>.menu a { ... }</code></small></p>
+					</li>
+					<li>
+						<p>de Hijos <small><code>.menu> li { ... }</code></small></p>
+					</li>
+					<li>
+						<p>de Hermanos <small><code>section ~ article { ... }</code></small></p>
+					</li>
+					<li>
+						<p>Adyacentes <small><code>h1 + h2 { ... }</code></small></p>
+					</li>
+					<li>
+						<p><a href="http://librosweb.es/libro/css_avanzado/capitulo_3/selector_de_atributos.html" target="_blank">de Atributos</a> <small><code>input[type="text"] { ... }</code></small></p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Pseudo-selectores</h2>
+				<p>Nos ayudan a aplicar estilos  especiales a nuestros elementos HTML, dependiendo de su contexto, posición o estado</p>
+				<ol>
+					<li>Pseudo-clases</li>
+					<li>Pseudo-elementos</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Pseudo-clases</h2>
+				<ul>
+					<li>
+						<p>Estatus de Enlaces <small><code>:link :visited</code></small></p>
+					</li>
+					<li>
+						<p>Interacciones del Usuario <small><code>:active :hover :focus</code></small></p>
+					</li>
+					<li>
+						<p>Elementos de Formularios <small><code>:checked :disabled :in-range :invalid :out-of-range :required :target :valid</code></small></p>
+					</li>
+					<li>
+						<p><a href="https://css-tricks.com/examples/nth-child-tester/" target="_blank">Posición del Elemento</a> <small><code>:first-child :first-of-type :last-child :last-of-type :nth-child() :nth-last-child() :nth-of-type() :only-child :only-of-type :default</code></small></p>
+					</li>
+					<li>
+						<p>CSS3 <small><code>:dir() :empty :first :fullscreen :indeterminate :lang() :left :not() :optional :read-only :read-write :right :root :scope</code></small></p>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Pseudo-elementos</h2>
+				<ul>
+					<li><code>::after { content:" " }</code></li>
+					<li><code>::before { content:" " }</code></li>
+					<li><code>::first-letter</code></li>
+					<li><code>::first-line</code></li>
+					<li><code>::selection</code></li>
+				</ul>
+			</section>
+			<section>
+				<h2>UNIDADES DE MEDIDA</h2>
+				<ul>
+					<li>
+						<strong>Absolutas</strong>
+						(<small>px, pt, pc, cm, mm, in</small>)
+					</li>
+					<li>
+						<strong>Relativas</strong>
+						<ul>
+							<li>
+								al Contenedor
+								<ul>
+									<small><li>% (Porcentajes)</li></small>
+								</ul>
+							</li>
+							<li>
+								a la Tipografía
+								<ul><small>
+									<li>em basada en la anchura de la letra</li>
+									<li>ex basada en la altura de la letra</li>
+									<li>rem es el em del elemento raiz (html)</li>
+								</small></ul>
+							</li>
+							<li>
+								al Viewport
+								<ul><small>
+									<li>vw anchura del viewport</li>
+									<li>vh altura del viewport</li>
+									<li>vmax entre vw y vh toma el que tenga mayor valor</li>
+									<li>vmin entre vw y vh toma el que tenga menor valor</li>
+								</small></ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>PATRONES</h2>
+				<ul>
+					<li>Son buenas prácticas de como hacer CSS basados en DRY (Don't Repeat Yourself), útiles cuando trabajamos en equípo</li>
+					<li>Código CSS reusable, modular y óptimo</li>
+				</ul>
+			</section>
+			<section>
+				<h2>PATRONES</h2>
+				<ol>
+					<li>FRAMEWORKS</li>
+					<li><a href="http://oocss.org/" target="_blank">OOCSS</a></li>
+					<li><a href="https://en.bem.info/" target="_blank">BEM</a></li>
+					<li><a href="http://sathify.github.io/CCSS/" target="_blank">CCSS</a></li>
+					<li><a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">ATOMIC DESIGN</a></li>
+				</ol>
+			</section>
+			<section>
+				<h2>BUENAS PRÁCTICAS DE CÓDIGO CSS</h2>
+				<ul>
+					<li>Separar nombre de selectores con el guión medio (-) y escribir en minúsculas</li>
+					<li>Preferir links sobre @import para llamar las hojas de estilo</li>
+					<li>Definir siempre un font-size al elemento root (html) y hacerlo en px</li>
+					<li>Ser cuidadoso con la definición de reglas a selectores de etiquetas</li>
+					<li>Evitar definición de selectores de ID</li>
+					<li>Usar en su mayoria selectores de clases</li>
+					<li>Aprovechar los pseudo-selectores y unidades de medida disponibles</li>
+				</ul>
+			</section>
+			<section>
+				<h2>BUENAS PRÁCTICAS DE CÓDIGO CSS</h2>
+				<ul>
+					<li>
+						Tener precaución con los shorthand de CSS
+						<ul><small>
+							<li><code>padding, margin, font, background, border, border-radius</code></li>
+							<li>preferible <code><b>background-color: #FFF</b></code> que <code><b>background: #FFF</b></code></li>
+						</small></ul>
+					</li>
+					<li>
+						Normalizar los estilos iniciales de las etiquetas HTML
+						<ul>
+							<li><a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset.css</a></li>
+							<li><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a></li>
+							<li>Definir uno propio que se adapte a nuestra técnica de maquetación y no te olvides del <a href="http://www.paulirish.com/2012/box-sizing-border-box-ftw/" target="_blank">box-sizing</a></li>
+						</ul>
+					</li>
+					<li>Maquetar bajo un enfoque Mobile First</li>
+				</ul>
+			</section>
+			<section>
+				<h2>ORDENAR ATRIBUTOS CSS</h2>
+				<small>La formula de la PC-TV</small>
+				<ol>
+					<li>
+						<p>Posicionamiento <small><code>position, top, left, right, bottom, clear, z-index</code></small></p>
+					</li>
+					<li>
+						<p>Modelo de Caja <small><code>display, float, margin, padding, width, height</code></small></p>
+					</li>
+					<li>
+						<p>Tipografia <small><code>font-family, font-size, line-height, color, text-align</code></small></p>
+					</li>
+					<li>
+						<p>Visual <small><code>background-color, border, border-radius, outline, opacity</code></small></p>
+					</li>
+				</ol>
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>JS</h2>
+				<h3>Programación</h3>
+			</section>
+			<section>
+				<h2>PROGRAMACIÓN</h2>
+				<ul>
+					<li>Provee funcionalidad, interactividad y dinamismo a nuestro HTML y CSS</li>
+					<li>Es el encargado de proveer soporte a los navegadores y de volver pesada o ágil la carga de nuestro documento</li>
+					<li>Activa o desactiva funcionalidades gracias a sus APIs Nativas</li>
+					<li>Existen una gran cantidad de librerías y frameworks JS</li>
+				</ul>
+			</section>
+			<section>
+				<h2>APIs</h2>
+				<ul>
+					<li>Complejidad en el cliente</li>
+					<li>Personalizando experiencia</li>
+					<li>Mayor Control</li>
+					<li>Ejemplos: DRAG AND DROP, HISTORY, STORAGE, FULLSCREEN, GETUSERMEDIA, BATTERY, CONTENTEDITABLE, CACHE, GEOLOCATION, CANVAS, SVG, WEBSOCKETS...</li>
+				</ul>
+			</section>
+			<section>
+				<h2>LIBRERIAS y FRAMEWORKS</h2>
+				<ul>
+					<li>Nos facilitan la interacción con nuestros elementos del DOM</li>
+					<li>Solventan u optimizan una necesidad o característica en particular del Frontend</li>
+					<li>Ejemplos: JQUERY, PROTOTYPE, MOOTOOLS, KENDO UI, ANGULAR, REACT, BACKBONE, EMBER, BROWSERIFY, GRUNT, GULP, BOWER...</li>
+				</ul>
+			</section>
+			<section>
+				<h2>SOPORTE A NAVEGADORES WEB</h2>
+				<ul>
+					<li>Características que los navegadores modernos aun no soportan</li>
+					<li>Características que los navegadores viejos no soportan</li>
+					<li>A través de FALLBACKs y Pollyfills</li>
+					<li>
+						Recursos
+						<ul>
+							<li><a href="http://caniuse.com/" target="_blank">CAN I USE</a></li>
+							<li><a href="http://modernizr.com/" target="_blank">MODERNIZR</a></li>	
+							<li><a  href="http://leaverou.github.io/prefixfree/" target="_blank">PREFIX FREE</a></li>
+							<li><a  href="https://github.com/postcss/autoprefixer" target="_blank">AUTO PREFIXER</a></li>
+							<li><a  href="https://babeljs.io/" target="_blank">BABEL</a></li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>JS Diferido</h2>		
+				<p>
+					El atributo <b>defer</b> es booleano, cuando está presente, especifica que el script se ejecuta cuando la página ha terminado de cargarse. Sólo debe usarse para scripts externos.
+				</p>
+				<p>
+					<pre>
+						<code class="html">
+		&lt;script src="js/mi-codigo.js" defer&gt;&lt;/script&gt;
+						</code>
+					</pre>
+				</p>
+			</section>
+			<section>
+				<h2>JS Asíncrono</h2>
+				<p>
+					El atributo <b>async</b> es booleano, cuando está presente, especifica que la secuencia de comandos se ejecutará de forma asíncrona tan pronto como esté disponible. Sólo debe usarse para scripts externos.
+				</p>
+				<p>
+					<pre>
+						<code class="html">
+		&lt;script src="js/mi-codigo.js" aync&gt;&lt;/script&gt;
+						</code>
+					</pre>
+				</p>
+			</section>
+			<section>
+				<h2>ENFOQUES RESPONSIVE</h2>
+				<ul>
+					<li>Responsive o Adaptive</li>
+					<li>Mobile First - Progressive Enhancement</li>
+					<li>Desktop First - Graceful Degradation</li>
+					<li>Responsible - Progressive Disclousure</li>
+					<li>ResponsiveDesign + Server Side (RESS)</li>
+				</ul>
+				<p><a href="#/2">&lt;&lt; regresar al temario</a></p>
+			</section>
+			<section>
+				<h2>GRACIAS</h2>
+				<h3><div class="carita">}:)</div></h3>
+				<img src="http://bextlan.com/img/para-cursos/be-water.png">
+			</section>
+		</div>
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			// Optional reveal.js plugins
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Pipe:
+  fortune | cowsay | lolcat
+Basic:
+  ./node_modules/.bin/browserify src/entry.js > dist/bundle.js
+
+Source Map:
+  ./node_modules/.bin/browserify src/entry.js -d > dist/bundle.js
+
+Comprimido:
+  ./node_modules/.bin/browserify src/entry.js -d |
+  ./node_modules/.bin/exorcist dist/bundle.js.map > dist/bundle.js &&
+  ./node_modules/.bin/uglifyjs
+    --source-map bundle.min.js.map
+    --in-source-map dist/bundle.js.map
+    --source-map-root dist/
+    -o dist/bundle.min.js
+    dist/bundle.js

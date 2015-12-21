@@ -1,0 +1,8 @@
+html {
+	background: #222;
+	color: greenyellow;
+}
+
+a { color: #FFF; }
+
+a:hover{ opacity: .75; }
