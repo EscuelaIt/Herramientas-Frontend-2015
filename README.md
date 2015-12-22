@@ -1,6 +1,12 @@
 # Herramientas Frontend 2015
+##### Aprende a trabajar de una forma profesional con las herramientas que mejorarán tu flujo de desarrollo frontend
+
+Independientemente de tu perfil y de tus habilidades, conocer y dominar las herramientas de trabajo que hoy en día tienes al alcance no solo hará que agilices tus desarrollos sino que logres multiplicar tu calidad profesional en poco tiempo.
+
+El Curso de Herramientas Frontend es una nueva iniciativa 100% online que te mostrará las buenas prácticas, herramientas y procesos que usan es sus trabajos los mejores desarrolladores y que harán que te sorprendas de cómo has podido sobrevivir sin ellas hasta la fecha.
 
 Recursos del curso de [Herramientas Frontend](http://escuela.it/cursos/herramientas-frontend/) en Escuela IT.
+
 
 
 * [01 - Buenas practicas en HTML5](01_Buenas_practicas_en_HTML5/)
